@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-quality-dashboard-usls
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-ndap-tenant/mc-quality-dashboard/frontend-quality-dashboard-usls@sha256:57d33f257677589f65c2256fec1a99ff117e24aeb1035bbd91b201b54bafa70d
+        name: quality-frontend-dashboard
+        resources: {}
+status: {}
